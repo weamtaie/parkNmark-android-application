@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mechanics">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mechanics"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Workers:"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FC9918"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/avatar1"
+                        android:layout_width="130dp"
+                        android:layout_height="129dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:srcCompat="@drawable/_47144" />
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_toRightOf="@id/avatar1"
+                        android:background="@color/white"
+                        android:padding="5dp"
+                        android:text="Name: Ahmed Mohamed Ali"
+                        />
+
+                    <TextView
+                        android:id="@+id/contactInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_margin="1dp"
+                        android:layout_toRightOf="@id/avatar1"
+                        android:background="@color/white"
+                        android:padding="5dp"
+                        android:text="Phone: 010XXXXXXXX" />
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/contactInfo"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_toRightOf="@id/avatar1"
+                        android:background="@color/white"
+                        android:padding="5dp"
+                        android:text="Rating: " />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/contactInfo"
+                        android:layout_margin="7dp"
+                        android:layout_toRightOf="@id/rating"
+                        android:numStars="5"
+                        android:rating="3.5"
+                        android:stepSize="2" />
+
+                    <Button
+                        android:id="@+id/buttonreq4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ratingBar"
+                        android:layout_toRightOf="@id/avatar1"
+                        android:text="Request" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FC9918"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/avatar2"
+                            android:layout_width="130dp"
+                            android:layout_height="129dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            app:srcCompat="@drawable/_15_1150622_avatar_demo2x_man_avatar_icon_png" />
+
+                        <TextView
+                            android:id="@+id/name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_toRightOf="@id/avatar2"
+                            android:background="@color/white"
+                            android:padding="5dp"
+                            android:text="Name: Samy Ali Sayed" />
+
+                        <TextView
+                            android:id="@+id/contactInfo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/name2"
+                            android:layout_margin="1dp"
+                            android:layout_toRightOf="@id/avatar2"
+                            android:background="@color/white"
+                            android:padding="5dp"
+                            android:text="Phone: 010XXXXXXXX" />
+
+                        <TextView
+                            android:id="@+id/rating2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/contactInfo2"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_toRightOf="@id/avatar2"
+                            android:background="@color/white"
+                            android:padding="5dp"
+                            android:text="Rating: " />
+
+                        <RatingBar
+                            android:id="@+id/ratingBar2"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/contactInfo2"
+                            android:layout_margin="7dp"
+                            android:layout_toRightOf="@id/rating2"
+                            android:numStars="5"
+                            android:rating="3.5"
+                            android:stepSize="2" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ratingBar2"
+                            android:layout_toRightOf="@id/avatar2"
+                            android:text="Request" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

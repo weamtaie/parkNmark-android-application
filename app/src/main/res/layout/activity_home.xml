@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.Home">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/singapore_transport___a_complete_guide_on_how_to_get_around"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-27dp">
+
+        <LinearLayout
+            android:id="@+id/navbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/black"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black"
+
+                app:srcCompat="@drawable/icons8_list_30" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/parkbutton"
+            android:layout_width="251dp"
+            android:layout_height="69dp"
+            android:layout_below="@+id/navbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350dp"
+            android:backgroundTint="#156813"
+            android:text="park your car"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/editbutton"
+            android:layout_width="251dp"
+            android:layout_height="69dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="480dp"
+            android:backgroundTint="#156813"
+            android:text="Edit your reservation"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="405dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135dp"
+            app:srcCompat="@drawable/untitled" />
+
+        <Button
+            android:id="@+id/buttonleave"
+            android:layout_width="251dp"
+            android:layout_height="69dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="550dp"
+            android:backgroundTint="#156813"
+            android:text="i am leaving !"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

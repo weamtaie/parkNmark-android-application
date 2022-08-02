@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SignUp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/singapore_transport___a_complete_guide_on_how_to_get_around"
+        tools:layout_editor_absoluteY="-27dp">
+
+        <TextView
+            android:id="@+id/signUpSalah"
+            android:layout_width="245dp"
+            android:layout_height="152dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:text=" Sign Up"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpSalah"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="User Name"
+            android:inputType="textPersonName"
+            android:textStyle="bold"
+            android:textColor="@color/black"  />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/UserName"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:hint=" Email address"
+            android:inputType="textEmailAddress"
+            android:textStyle="bold"
+            android:textColor="@color/black"  />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTextEmailAddress"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/ic_baseline_security_24"
+            android:hint=" Passowrd"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Confirm Password: "
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:textColor="@color/black"  />
+
+        <Button
+            android:id="@+id/buttonregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTextPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#156813"
+            android:text="Register!"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

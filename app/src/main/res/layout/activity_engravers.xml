@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Engravers">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/singapore_transport___a_complete_guide_on_how_to_get_around"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/buttoncontinue"
+            android:layout_width="372dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="380dp"
+            android:backgroundTint="#156813"
+            android:text="continue reservation" />
+
+        <Button
+            android:id="@+id/btnlocation"
+            android:layout_width="372dp"
+            android:layout_height="68dp"
+            android:backgroundTint="#156813"
+            android:layout_marginTop="300dp"
+            android:text="select your location"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

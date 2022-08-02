@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_action_home">
+
+    <activity
+        android:id="@+id/nav_home"
+        android:name="com.example.slahly_final.ui.home.Home"
+        tools:layout="@layout/nav_activity_home"
+        />
+
+    <activity
+        android:id="@+id/nav_contact_us"
+        android:name="com.example.slahly_final.ui.home.ContactUs"
+        tools:layout="@layout/nav_activity_contact_us" />
+    <activity
+        android:id="@+id/nav_help"
+        android:name="com.example.slahly_final.ui.home.Help"
+        tools:layout="@layout/nav_activity_help" />
+    <activity
+        android:id="@+id/nav_about_us"
+        android:name="com.example.slahly_final.ui.home.AboutUs"
+        tools:layout="@layout/nav_activity_contact_us" />
+    <activity
+        android:id="@+id/nav_log_out"
+        android:name="com.example.slahly_final.ui.home.LogOut"
+        tools:layout="@layout/nav_activity_contact_us" />
+
+
+</navigation>
